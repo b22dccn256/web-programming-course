@@ -13,17 +13,13 @@ Nhà Nhỏ Decor Xinh là website chia sẻ ý tưởng decor, nội thất và 
 
 ### Ảnh giao diện
 
-> *Chèn ảnh chụp màn hình các trang chính vào đây trước khi nộp/đăng repo.*
-
 | Trang chủ | Trang Sản phẩm |
 |---|---|
-| ![Trang chủ](./screenshots/homepage.jpg) | ![Sản phẩm](./screenshots/products.jpg) |
+| ![Trang chủ](./screenshots/homepage.png) | ![Sản phẩm](./screenshots/products.png) |
 
 | Trang Blog | Trang chi tiết sản phẩm |
 |---|---|
-| ![Blog](./screenshots/blog.jpg) | ![Chi tiết](./screenshots/product-detail.jpg) |
-
-*(Tạo thư mục `screenshots/` trong repo, đặt ảnh đúng tên file như trên, hoặc đổi lại đường dẫn cho khớp ảnh thực tế của bạn.)*
+| ![Blog](./screenshots/blog.png) | ![Chi tiết](./screenshots/product-detail.png) |
 
 ---
 
