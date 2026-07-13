@@ -111,6 +111,17 @@ astra-child/
 
 ---
 
+## Hướng dẫn cài đặt
+
+1. Tải và cài đặt WordPress trên localhost (XAMPP/MAMP/LocalWP) hoặc hosting.
+2. Cài đặt và kích hoạt theme cha **Astra** từ kho giao diện của WordPress.
+3. Tải mã nguồn của child theme này về máy.
+4. Vào **Appearance → Themes → Add New**, tải lên thư mục `astra-child` (định dạng `.zip`) và kích hoạt.
+5. Cài đặt các plugin yêu cầu: Elementor, WPForms, ThirstyAffiliates.
+6. Copy toàn bộ nội dung trong file `assets/css/additional-css.css` và dán vào phần **Appearance → Customize → Additional CSS**.
+
+---
+
 ## Hướng phát triển tiếp theo
 
 - Tích hợp cổng thanh toán / theo dõi click affiliate
