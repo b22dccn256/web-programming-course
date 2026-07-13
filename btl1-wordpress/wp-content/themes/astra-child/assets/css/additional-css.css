@@ -1,0 +1,315 @@
+/* Fix Header không bị trong suốt/mờ */
+.site-header,
+#masthead,
+.main-header-bar,
+.ast-primary-header-bar,
+.ast-header-break-point .main-header-bar {
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 999 !important;
+}
+
+.site-header a,
+.main-header-bar a,
+.ast-primary-header-bar a {
+    color: #222222 !important;
+    opacity: 1 !important;
+}
+
+/* Ẩn tiêu đề trùng lặp trang chủ */
+.home .page-header,
+.home .entry-header {
+    display: none !important;
+}
+
+/* Hiệu ứng đẹp cho khối sản phẩm nổi bật (trang chủ) */
+.nnx-san-pham-item {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.nnx-san-pham-item:hover {
+    transform: translateY(-5px);
+}
+
+.nnx-san-pham-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Khoảng cách đẹp hơn */
+.entry-content>* {
+    margin-bottom: 40px;
+}
+
+.wp-block-latest-posts {
+    gap: 20px;
+}
+
+/* Canh chỉnh Header: Logo trái - Menu phải, không xuống dòng */
+.ast-primary-header-bar,
+.main-header-bar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    padding: 15px 30px !important;
+}
+
+.main-header-menu {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+}
+
+.main-header-menu .menu-item {
+    margin-left: 20px !important;
+}
+
+.ast-site-identity {
+    flex-shrink: 0 !important;
+}
+
+.main-header-menu a {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Đồng bộ màu nền toàn trang */
+body,
+.site-header,
+.main-header-bar,
+#content,
+.ast-separate-container .ast-article-single,
+footer.site-footer,
+.site-footer,
+.ast-small-footer {
+    background-color: #ffffff !important;
+}
+
+.site-title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+}
+
+/* Khoảng cách đều giữa các khối trong trang chủ */
+.entry-content>.wp-block-group,
+.entry-content>.wp-block-heading {
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Căn chỉnh cột Bài viết mới nhất luôn thẳng hàng trên cùng */
+.wp-block-columns {
+    align-items: flex-start !important;
+}
+
+.wp-block-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.nnx-hero-box {
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(4px);
+    padding: 40px !important;
+    border-radius: 12px;
+}
+
+/* Ép Hero Cover tràn hết màn hình ngang */
+.wp-block-cover.alignfull {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    max-width: 100vw !important;
+}
+
+/* Chiều cao Hero Banner - responsive theo từng kích thước màn hình */
+.wp-block-cover {
+    min-height: calc(vh - 130px) !important;
+}
+
+@media (max-width: 768px) {
+    .wp-block-cover {
+        min-height: 500px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .wp-block-cover {
+        min-height: 400px !important;
+    }
+}
+
+/* Ẩn tiêu đề trang mặc định cho toàn bộ Pages */
+.page .entry-header,
+.page .page-header {
+    display: none !important;
+}
+
+/* Ẩn tiêu đề "Sản phẩm Affiliate" trên trang Archive */
+.post-type-archive-san_pham_aff .page-header,
+.post-type-archive-san_pham_aff .entry-header,
+.post-type-archive-san_pham_aff .ast-archive-title,
+.post-type-archive-san_pham_aff .ast-archive-description,
+.post-type-archive-san_pham_aff .ast-post-format-tag {
+    display: none !important;
+}
+
+/* Fix layout bị vỡ sau khi thêm box Mua ngay vào trang chi tiết Sản phẩm */
+.single-san_pham_aff .entry-content {
+    overflow: hidden;
+}
+
+.single-san_pham_aff .entry-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nnx-single-box {
+    clear: both;
+    overflow: hidden;
+}
+
+/* Layout dạng List cho trang Archive Sản phẩm */
+.post-type-archive-san_pham_aff #primary {
+    display: block !important;
+    width: 100% !important;
+}
+
+.post-type-archive-san_pham_aff .ast-article-post {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 24px;
+    background: #f5f0e8;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px !important;
+}
+
+.post-type-archive-san_pham_aff .ast-row,
+.post-type-archive-san_pham_aff .row,
+.post-type-archive-san_pham_aff .posts-wrapper {
+    position: static !important;
+    height: auto !important;
+}
+
+.post-type-archive-san_pham_aff .post-thumb {
+    flex: 0 0 260px;
+}
+
+.post-type-archive-san_pham_aff .post-thumb img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post-type-archive-san_pham_aff .ast-article-inner {
+    flex: 1;
+}
+
+.post-type-archive-san_pham_aff .entry-title {
+    margin-bottom: 6px;
+}
+
+.post-type-archive-san_pham_aff .entry-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.post-type-archive-san_pham_aff .nnx-archive-desc {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+    color: #555;
+}
+
+.post-type-archive-san_pham_aff .nnx-archive-price {
+    font-weight: 600;
+    color: #8a6d3b;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.post-type-archive-san_pham_aff .nnx-archive-buy {
+    white-space: nowrap;
+}
+
+/* Responsive: điện thoại chuyển về xếp dọc */
+@media (max-width: 700px) {
+    .post-type-archive-san_pham_aff .ast-article-post {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-type-archive-san_pham_aff .post-thumb {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 701px) {
+    .post-type-archive-san_pham_aff .ast-article-post {
+        flex-direction: row !important;
+    }
+
+    .post-type-archive-san_pham_aff .post-thumb {
+        flex: 0 0 200px !important;
+        max-width: 200px !important;
+        width: 200px !important;
+    }
+}
+
+/*
+ Footer
+*/
+.nnx-footer {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.nnx-footer-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.nnx-footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.nnx-footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nnx-footer-links a:hover {
+    color: #7d8ca3;
+}
+
+.nnx-footer-copy {
+    font-size: 13px;
+    color: #999;
+    margin: 0;
+}
