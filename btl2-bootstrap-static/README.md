@@ -6,8 +6,6 @@ dữ liệu ở đâu cả** — toàn bộ chạy ngay trong trình duyệt.
 
 ## Giao diện trang web
 
-*(Lưu ý: Bạn hãy lưu các ảnh chụp vào thư mục `assets/img/` với tên tương ứng để hình ảnh hiển thị ở đây)*
-
 ### Phần đầu trang (Hero Section)
 ![Giao diện phần đầu trang](assets/img/screenshot.png)
 
