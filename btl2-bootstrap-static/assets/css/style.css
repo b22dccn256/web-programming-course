@@ -479,69 +479,16 @@ section { padding: 5rem 0; }
 .footer-bottom { font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); }
 
 /* =========================================================
-   Trang placeholder (login.php / register.php / trang admin chưa xong)
+   Ghi chú nhỏ dưới form (bản demo tĩnh)
    ========================================================= */
-.section-placeholder {
-    padding: 7rem 0;
-}
-.section-placeholder .section-desc {
-    max-width: 60ch;
-}
-.section-placeholder code {
-    background: rgba(20, 33, 61, 0.06);
-    color: var(--ink);
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
-    font-family: var(--font-mono);
-    font-size: 0.85em;
+.form-note {
+    font-size: 0.8rem;
+    color: var(--slate);
+    font-style: italic;
 }
 
-/* =========================================================
-   Khu vực admin (khung sườn — hoàn thiện ở bài tập 3)
-   ========================================================= */
-.admin-layout {
-    display: flex;
-    min-height: 100vh;
-}
-.admin-sidebar {
-    width: 240px;
-    flex-shrink: 0;
-    background: var(--ink);
-    color: #fff;
-    padding: 1.5rem 1rem;
-}
-.admin-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    margin-bottom: 2rem;
-    padding: 0 0.5rem;
-}
-.admin-nav {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-.admin-nav a {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    color: rgba(255, 255, 255, 0.75);
-    padding: 0.6rem 0.75rem;
-    border-radius: 6px;
-    font-size: 0.92rem;
-}
-.admin-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
-
-.admin-content {
-    flex-grow: 1;
-    padding: 2.5rem;
-    background: var(--paper);
-}
+/* Bootstrap validation styles cần .was-validated ở thẻ <form> mới hiện,
+   phần .invalid-feedback đã có sẵn trong Bootstrap nên không cần định nghĩa lại ở đây. */
 
 /* =========================================================
    Responsive
