@@ -33,6 +33,33 @@ Nhà Nhỏ Decor Xinh là website chia sẻ ý tưởng decor, nội thất và 
 
 ---
 
+## Hướng dẫn cài đặt
+ 
+### Yêu cầu
+- Hosting hỗ trợ PHP ≥ 7.4, MySQL ≥ 5.7 (khuyến nghị LiteSpeed/Apache)
+- WordPress đã cài sẵn (hoặc cài mới qua trình cài đặt 1-click của hosting)
+
+### Các bước chính
+ 
+1. **Tạo Database & cài WordPress**
+   Tạo Database MySQL qua hosting, cài WordPress trỏ vào Database đó.
+2. **Cài Theme Astra**
+   `Appearance → Themes → Add New` → tìm **Astra** → Install → Activate.
+3. **Thêm Astra Child Theme**
+   Copy thư mục `astra-child/` (trong repo này) vào `wp-content/themes/` trên hosting, sau đó `Appearance → Themes` → kích hoạt **Astra Child**.
+4. **Cài các plugin bắt buộc**
+   Elementor, Rank Math SEO, LiteSpeed Cache, WPForms — cài qua `Plugins → Add New`.
+5. **Dán Additional CSS**
+   Copy toàn bộ nội dung tại `astra-child/assets/css/additional-css.css` → dán vào `Appearance → Customize → Additional CSS` → Publish.
+6. **Flush Permalinks (bắt buộc)**
+   Vào `Settings → Permalinks` → bấm **Save Changes** một lần để kích hoạt URL của Custom Post Type `san_pham_aff`.
+7. **Khai báo Posts Page & Menu**
+   `Settings → Reading` → chọn Homepage tĩnh + Posts page cho Blog. Sau đó tạo Menu tại `Appearance → Menus` gồm: Trang chủ, Blog, Sản phẩm, Giới thiệu, Liên hệ.
+8. **Nhập dữ liệu mẫu**
+   Tạo sản phẩm qua menu **Sản phẩm** (CPT), điền Custom Fields `gia-tien` và `link-san-pham` cho từng sản phẩm.
+ 
+---
+
 ## Các giai đoạn thực hiện
 
 ### Giai đoạn 1 — Hạ tầng (Domain, Hosting, SSL)
@@ -108,17 +135,6 @@ astra-child/
 │       └── additional-css.css   # Lưu trữ nội dung ô Additional CSS (Customizer)
 └── screenshots/                 # Ảnh giao diện minh họa (tự thêm)
 ```
-
----
-
-## Hướng dẫn cài đặt
-
-1. Tải và cài đặt WordPress trên localhost (XAMPP/MAMP/LocalWP) hoặc hosting.
-2. Cài đặt và kích hoạt theme cha **Astra** từ kho giao diện của WordPress.
-3. Tải mã nguồn của child theme này về máy.
-4. Vào **Appearance → Themes → Add New**, tải lên thư mục `astra-child` (định dạng `.zip`) và kích hoạt.
-5. Cài đặt các plugin yêu cầu: Elementor, WPForms, ThirstyAffiliates.
-6. Copy toàn bộ nội dung trong file `assets/css/additional-css.css` và dán vào phần **Appearance → Customize → Additional CSS**.
 
 ---
 
