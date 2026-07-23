@@ -1,0 +1,14 @@
+/* public/css/style.css
+   Chỉnh sửa nhỏ trên nền Bootstrap 5.3, không cần viết lại từ đầu. */
+
+body {
+    background-color: #f5f6f8;
+}
+
+.item-row .subtotal-cell {
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
